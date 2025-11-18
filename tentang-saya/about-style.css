@@ -1,0 +1,175 @@
+/* halaman */
+
+body {
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ============================ */
+/* navigation */
+/* ============================ */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(145, 11, 11);
+    border-bottom: solid;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* logo */
+#logo {
+    margin-left: 25px;
+    color: rgb(7, 170, 196);
+    cursor: pointer;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+#logo span {
+    color: red;
+}
+
+#logo:hover {
+    color: red;
+    transform: rotate(-3deg) translate(-5px, -5px);
+    transition: 0.5s;
+}
+
+#logo:hover span {
+    color: rgb(7, 170, 196);
+    transition: 0.5s;
+}
+
+/* nav-center */
+#nav-center ul {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 15px;
+    border: solid 2px black;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(7, 170, 196);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    border: solid 2px white;
+    background-color: rgb(152, 36, 36);
+    transform: rotate(-4deg);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+ul li:hover a {
+    color: red;
+    transition: 0.5s;
+}
+
+/* button */
+
+button {
+    background-color: red;
+    margin-right: 25px;
+    padding: 8px;
+    border: solid;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a:hover button {
+    transform: rotate(3deg) translate(5px, 5px);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+button:hover{
+    color: red;
+    border: solid black;
+    background-color: rgb(7, 170, 196);
+}
+a:active button {
+    box-shadow: none;
+    transform: translateY(2px);
+    
+}
+
+/* ============================ */
+/* navigation */
+/* ============================ */
+
+/* ======================================================================================================================================= */
+
+
+/* ============================ */
+/* Main content */
+/* ============================ */
+
+main{
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: red ; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+}
+
+.isi{
+   
+    text-align: justify;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+/* ============================ */
+/* Main content */
+/* ============================ */
+
+/* =================================================================== */
+
+/* ============================ */
+/* footer */
+/* ============================ */
+
+footer{
+    text-align: center;
+    background-color:rgb(145, 11, 11) ;
+    font-size: 20px;
+    border: solid 1px;
+}
+
+
+/* ============================ */
+/* footer */
+/* ============================ */
+
+
