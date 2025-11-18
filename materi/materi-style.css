@@ -1,21 +1,43 @@
-/* halaman */
-
+html{
+    scroll-behavior: smooth;
+}
 body {
-    background-color: brown;
+    background-color: #F7F7F7; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #333;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-/* ============================ */
-/* navigation */
-/* ============================ */
+h1, h2, h3 {
+    font-family: 'Arial Black', sans-serif;
+    color: #C0392B; /* Merah Tua */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
 
-.navigation {
+p {
+    text-align: justify;
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+}
+
+.isi {
+    text-align: justify;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    padding: 0;
+}
+
+/* ====================================
+   2. HEADER & NAVIGASI
+   ==================================== */
+.navigation { 
     display: flex;
     justify-content: space-between;
-    background-color: rgb(145, 11, 11);
-    border-bottom: solid;
+    background-color: #C0392B; /* Merah Tua */
+    border-bottom: 3px solid #E74C3C; /* Merah Cerah */
     padding: 0;
     margin: 0;
     align-items: center;
@@ -24,152 +46,310 @@ body {
     z-index: 100;
 }
 
-/* logo */
 #logo {
     margin-left: 25px;
-    color: rgb(7, 170, 196);
+    color: #3498DB; /* Biru/Cyan */
     cursor: pointer;
     font-size: 40px;
     transition: 0.3s ease-in-out;
+    will-change: transform;
 }
 
 #logo span {
-    color: red;
+    color: #F7F7F7; 
 }
 
 #logo:hover {
-    color: red;
+    color: #E74C3C; 
     transform: rotate(-3deg) translate(-5px, -5px);
     transition: 0.5s;
 }
 
 #logo:hover span {
-    color: rgb(7, 170, 196);
+    color: #3498DB; 
     transition: 0.5s;
 }
 
-/* nav-center */
 #nav-center ul {
     display: flex;
 }
 
-ul li {
+/* LIST ITEM NAVIGASI */
+#nav-center ul li {
     list-style-type: none;
     margin: 15px;
-    border: solid 2px black;
+    border: solid 2px #E74C3C; 
     border-radius: 15px;
     padding: 10px;
-    transition: 0.3s;
+    transition: 0.5s;
+    will-change: transform;
 }
 
-ul li a {
+#nav-center ul li a {
     text-decoration: none;
-    color: rgb(7, 170, 196);
+    color: #F7F7F7; 
     font-size: 20px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-ul li:hover {
-    border: solid 2px white;
-    background-color: rgb(152, 36, 36);
+#nav-center ul li:hover {
+    border: solid 2px #3498DB; /* Hover Border Biru/Cyan */
+    background-color: #E74C3C; /* Hover Background Merah Cerah */
     transform: rotate(-4deg);
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
-    transition: 0.5s;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5); 
 }
 
-ul li:hover a {
-    color: red;
-    transition: 0.5s;
+/* HOVER FONT WARNA BIRU/CYAN DI NAVIGASI */
+#nav-center ul li:hover a {
+    color: #3498DB; /* BIRU/CYAN */
 }
 
-/* button */
-
+/* Tombol (Button) */
 button {
-    background-color: red;
+    background-color: #E74C3C; 
+    color: white;
     margin-right: 25px;
     padding: 8px;
-    border: solid;
+    border: solid 2px #C0392B; 
     border-radius: 15px;
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
+    will-change: transform;
 }
 
 a:hover button {
     transform: rotate(3deg) translate(5px, 5px);
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: 0.5s;
-    
 }
 
 button:hover{
-    color: red;
-    border: solid black;
-    background-color: rgb(7, 170, 196);
+    color: #C0392B; 
+    border: solid 2px #3498DB; 
+    background-color: #3498DB; 
 }
+
 a:active button {
     box-shadow: none;
     transform: translateY(2px);
-    
 }
 
-/* ============================ */
-/* navigation */
-/* ============================ */
-
-/* ======================================================================================================================================= */
-
-
-/* ============================ */
-/* Main content */
-/* ============================ */
-
+/* ====================================
+   3. MAIN Konten
+   ==================================== */
 main{
     max-width: 1000px;
     margin: 20px auto;
     padding: 10px;
-    background-color: red ; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white ; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
     border-radius: 20px;
-    
 }
 
-.isi{
-   
-    text-align: justify;
-    letter-spacing: 1px;
-    margin-left: 15px;
+.content-wrapper {
+    max-width: 1300px; 
+    margin: 20px auto;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    /* BACKGROUND DI BELAKANG MAIN KONTEN */
+    background-color: #F0A0A0; 
+}
+
+.sidebar-iframe {
+    width: 300px; 
+    height: 450px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 250px;
+}
+
+/* ====================================
+   4. KOMPONEN KONTEN & VISUALISASI
+   ==================================== */
+
+.sub-bab {
+    text-align: left; 
+    border-bottom: 2px solid #E74C3C; 
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* STYLE UNTUK INLINE CODE (Contoh: <code>&lt;br&gt;</code>) */
+code {
+    background-color: #F0F0F0; 
+    border: 1px solid #D0D0D0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #C0392B; 
+    font-size: 0.95em;
+}
+
+/* STYLE UNTUK BLOK KUTIPAN/DEFINISI (BLOCKQUOTE) */
+blockquote {
+    border-left: 5px solid #3498DB; /* Border Biru/Cyan */
+    background-color: #ECF0F1; 
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+
+.ctr-img {
+    display: block;
+    margin: 20px auto; 
+    max-width: 90%; 
+    height: auto;
+    border: 1px solid #ccc; 
+}
+
+img[src*="codingan/"], img[src*="bahan/gambar/codingan/"] {
+    max-width: 70%;
+}
+
+/* LIST ITEM UMUM (di luar Navigasi) */
+ul li, ol li {
+    list-style-type: disc; 
+    margin: 0 0 5px 20px; 
     padding: 0;
+    border: none;
+    background-color: transparent;
+    transform: none;
+    box-shadow: none;
+    transition: none;
+}
+ul li:hover, ol li:hover {
+    background-color: transparent;
 }
 
 
+.result-text, .result-text-formatting, .result-emoji {
+    padding: 10px 15px;
+    background-color: #FFF8DC; 
+    border-left: 5px solid #F39C12; 
+    margin: 15px 0;
+    font-family: monospace;
+}
 
-
-
-
-
-
-/* ============================ */
-/* Main content */
-/* ============================ */
-
-/* =================================================================== */
-
-/* ============================ */
-/* footer */
-/* ============================ */
-
-footer{
+.video-container {
     text-align: center;
-    background-color:rgb(145, 11, 11) ;
+    margin: 20px 0;
+}
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 20px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    display: block;
+    overflow-x: auto;
+}
+
+.styled-table th, .styled-table td {
+    border: 2px solid #333; 
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.styled-table thead th {
+    background-color: #C0392B; 
+    color: #ffffff;
+    border-color: #333;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #F0F0F0; 
+}
+
+/* ==============================
+   5. FOOTER
+   ============================= */
+footer {
+    text-align: center;
+    background-color:#C0392B; 
+    color: white;
     font-size: 20px;
-    border: solid 1px;
+    /* MENGHILANGKAN BORDER BIRU */
+    border-top: none; 
 }
 
 
-/* ============================ */
-/* footer */
-/* ============================ */
+/* ====================================
+   6. IFRAME & MEDIA QUERIES
+   ==================================== */
 
+/* MENENGAHKAN IFRAME */
+#Frame{
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 5px solid #C0392B; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
 
+@media (max-width: 800px) {
+    
+    .content-wrapper {
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 100%;
+        align-items: center; 
+        min-height: auto;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #nav-center ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+        margin-right: 0;
+    }
+
+    #logo {
+        margin: 10px 0 0 10px;
+        margin-right: unset;
+    }
+    
+    #nav-center ul li a {
+        padding: 8px 10px;
+        font-size: 18px;
+    }
+
+    .sidebar-iframe {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        margin-right: 0;
+        
+        width: 95%; 
+        height: 350px;
+    }
+
+    #Frame{
+        margin: 20px auto;
+        max-width: 95%; 
+    }
+    table, .styled-table {
+        display: block;
+        overflow-x: auto;
+    }
+}

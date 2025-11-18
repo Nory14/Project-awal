@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi-Html</title>
-    <link rel="stylesheet" href="materi-style.css">
+    <link rel="stylesheet" href="/materi/materi-style.css">
 </head>
 <body>
     <header class="navigation">
@@ -25,19 +25,366 @@
             </button>
         </a>
     </header>
+<main>
+   <div class="main-content-area">
+    
+    <div class="isi">
+        
+        <section id="entities">
+            <h2 class="sub-bab"> Entities </h2>
+            
+            <blockquote>
+                HTML Entity adalah kode pengganti untuk karakter yang telah dipesan (*reserved*) oleh HTML, seperti **&lt;** (kurang dari) dan **&gt;** (lebih dari). Menggunakan karakter asli secara langsung akan menyebabkan kerusakan struktur tag.
+            </blockquote>
+            
+            <p>Di dalam HTML, beberapa karakter sudah dipesan atau dikunci oleh HTML, sehingga kita tidak bisa menggunakan karakter seperti <code>&lt;</code> atau <code>&gt;</code> pada tulisan teks biasa. Jika kita memaksakan untuk memasukannya, halaman HTML akan rusak dan error karena karakter tersebut akan dianggap sebagai tag HTML.</p>
+            
+            <p>Disarankan untuk memakai simbol *entitiy* daripada langsung mengetik karakternya untuk lebih aman. Kalian bisa mencari simbol atau kode entities yang diinginkan di laman pencarian.</p>
 
-    <main>
+            <img src="/bahan/gambar/entitis.png" alt="tabel entitie" class="ctr-img">
 
-<div class="isi">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur laudantium ipsam iusto! Voluptatibus nemo repellendus ea corporis tempora temporibus consequuntur error sapiente tempore voluptatum quo, molestias distinctio architecto! Nostrum excepturi qui illum! Sequi quos quibusdam dolorem ad fuga optio assumenda, id, unde maiores accusantium officia ipsam vel! Aperiam inventore impedit maxime numquam labore vel repellendus praesentium molestiae deleniti quas architecto qui, pariatur placeat quasi exercitationem blanditiis sunt laudantium dolorem! Est veritatis nobis perspiciatis eligendi, itaque aliquid harum placeat? Consequuntur consectetur nam assumenda, commodi ducimus molestiae maiores distinctio adipisci quibusdam sit? Deserunt aspernatur, obcaecati eos dolore eligendi nihil voluptatem dicta fuga aliquid. Laudantium natus optio magni debitis tempora veniam molestiae odit consequuntur aspernatur. Itaque praesentium asperiores vitae tempora optio minus doloremque vero sit at, possimus cupiditate nulla ab voluptatum, quas exercitationem molestias reprehenderit dolorum expedita explicabo voluptatem. Ratione impedit, veritatis quisquam quis eveniet voluptas accusamus fugiat et aut non, libero molestias modi consectetur optio? Id quia, quaerat odio cum sunt aspernatur, voluptatem fugiat adipisci maxime magni quibusdam officia commodi molestiae dolorem architecto, dolor blanditiis porro nesciunt laborum excepturi fugit. Maiores asperiores totam animi dolorem. Ipsum sed quod esse quia explicabo omnis voluptates itaque reiciendis aspernatur, impedit blanditiis, nisi, dicta a natus porro rerum reprehenderit! Voluptatibus, inventore asperiores temporibus nobis rerum obcaecati provident! Quisquam error placeat doloremque quibusdam repellat vitae itaque unde ipsum inventore cum, beatae quaerat, alias adipisci laborum impedit voluptates vel dolor illum architecto voluptate expedita nesciunt dicta? Eaque rem itaque illo molestias quidem id! Consequatur cupiditate aspernatur a aliquam fugit quisquam distinctio quis itaque, eveniet commodi nostrum. Accusamus enim, velit fugit temporibus esse laudantium quasi aspernatur doloribus ratione. Odit laboriosam earum ducimus aperiam ipsum animi ab sequi molestias dicta cumque, quo explicabo dolorem dolorum adipisci, quas quis eveniet. Deserunt harum officia iste velit ducimus veritatis quo atque quod?
+            <p>Seperti yang bisa dilihat pada gambar, terdapat simbol yang kita inginkan untuk dipakai. Kita tinggal memasukkan numericnya pada HTML untuk memunculkannya. Saya akan memberikan contohnya:</p>
+
+            <img src="/bahan/gambar/codingan/entititiess.png" alt="kode entities" class="ctr-img">
+
+            <p> Seperti yang terlihat pada kode HTML di atas, saya bermaksud menambahkan simbol buka kurung **(&lpar;)** dan tutup kurung **(&rpar;)**. Maka saya memasukkan kode yang sesuai yaitu <code>&amp;lpar;</code> untuk buka kurung dan kode <code>&amp;rpar;</code> untuk tutup kurung. Maka hasilnya seperti teks yang ada di bawah ini:</p>
+
+            <h3 class="result-text">
+                Belajar (&lpar;HTML&rpar;)
+            </h3>
+        </section>
+        
+        <section id="break-line">
+            <h2 class="sub-bab"> Break Line </h2>
+            
+            <p>HTML mengabaikan *line breaks* (tombol enter) dan spasi berlebihan di dalam paragraf. Untuk memaksa baris baru di tengah teks, gunakan tag <code>&lt;br&gt;</code>. Tag ini adalah *void element* sehingga tidak memerlukan konten.</p>
+
+            <img src="/bahan/gambar/codingan/breakline.png" alt="coding break-line" class="ctr-img">
+
+            <p>Maka akan seperti ini hasilnya:</p>
+
+            <img src="/bahan/gambar/memakai br.png" alt="Hasil tampilan teks menggunakan tag br" class="ctr-img">
+
+            <p>Kalian bisa membandingkannya dengan yang tidak memakai tag <code>&lt;br&gt;</code> pada HTML. Hasilnya akan seperti ini:</p>
+
+            <img src="/bahan/gambar/codingan/tanpa br.png" alt="Contoh kode HTML tanpa tag br" class="ctr-img">
+            
+            <img src="/bahan/gambar/tanpa br.png" alt="Hasil tampilan teks tanpa tag br" class="ctr-img">
+
+            <p>Seperti yang kita lihat, jika tidak memakai tag <code>&lt;br&gt;</code>, spasi dan *enter* tidak akan terbaca oleh HTML dan tulisan akan menjadi satu bagian seperti yang terlihat pada gambar.</p>
+        </section>
+
+        <section id="format-teks">
+            <h2 class="sub-bab"> Formatting </h2>
+            <p>Di dalam aplikasi pengolahan teks seperti MS Word, kita bisa memformat tulisan menjadi tebal atau miring. Begitu juga dengan HTML, kita bisa merubah format teks menggunakan tag yang sesuai dengan yang kita inginkan:</p>
+            <ul>
+                <li><code>&lt;strong&gt;</code> untuk membuat teks **penting** (sebagai pengganti <code>&lt;b&gt;</code>)</li>
+                <li><code>&lt;em&gt;</code> untuk memberi *penekanan* pada teks (sebagai pengganti <code>&lt;i&gt;</code>)</li>
+                <li><code>&lt;small&gt;</code> untuk teks kecil</li>
+                <li><code>&lt;del&gt;</code> untuk mencoret teks</li>
+                <li><code>&lt;ins&gt;</code> untuk meberi garis bawah pada teks</li>
+                <li><code>&lt;sub&gt;</code> untuk subscript teks</li>
+                <li><code>&lt;sup&gt;</code> untuk superscript teks</li>
+            </ul>
+            
+            <img src="/bahan/gambar/codingan/formating.png" alt="Contoh kode HTML formatting" class="ctr-img">
+            
+            <p>Maka hasilnya akan seperti ini:</p>
+            <p class="result-text-formatting">
+                (&lpar; halo <strong>eko</strong> selamat belajar <ins>HTML</ins> bersama <em>AZRIZ</em> &rpar;)
+            </p>
+        </section>
+
+        <section id="color">
+            <h2 class="sub-bab">COLOR</h2>
+            <p>Dalam pemberian warna pada HTML, ia mendukung banyak format warna, tidak hanya dengan nama saja (red, green, blue) namun juga dengan format seperti HEX, RGB, HSL, dan lain-lain. Dengan begitu, pemilihan warna akan lebih akurat sesuai warna yang dibutuhkan dibanding hanya memasukkan nama warnanya saja.</p>
+            
+            <p>Untuk kode HEX maupun RGB bisa dicari di Google tiap kodenya, atau bisa memakai <a href="https://colorpicker.me/" target="_blank">https://colorpicker.me</a> untuk memilih warna yang dibutuhkan.</p>
+            
+            <img src="/bahan/gambar/codingan/color.png" alt="Contoh kode HTML menggunakan format warna berbeda" class="ctr-img">
+            
+            <p>Hasilnya :</p>
+            <h3 class="color-example" style="background-color:red;">Belajar bersama azriz</h3>
+            <h3 class="color-example" style="background-color: #331ba3;">memakai html</h3>
+            <h3 class="color-example" style="background-color: rgb(28, 220, 4);">tetap semangat</h3>
+            <h3 class="color-example" style="background-color: hsl(182, 65%, 60%);">jangan lupa istirahat</h3>
+        </section>
+
+        <section id="list">
+            <h2 class="sub-bab">Membuat List</h2>
+            <p>Dalam pembuatan list di HTML, ada 2 tag yang bisa kita gunakan, yaitu *ordered list* dengan memakai tag <code>&lt;ol&gt;</code> dan *unordered list* dengan memakai tag <code>&lt;ul&gt;</code>. Isi dari kedua list tersebut menggunakan tag <code>&lt;li&gt;</code>.</p>
+            
+            <blockquote>
+                Bedanya, tag *ordered list* bisa kita ubah tipe listnya sesuai apa yang kita inginkan dengan memakai angka, huruf, maupun angka romawi. Sedangkan *unordered list* hanya memakai titik sebagai awalan list dan tidak bisa diubah.
+            </blockquote>
+
+            <ol type="1">
+                <li><strong>Unordered List</strong></li>
+                
+                <img src="/bahan/gambar/codingan/un ordered list.png" alt="Contoh kode HTML unordered list" class="ctr-img list-img">
+                
+                <p><strong>Hasil codingan</strong></p>
+                <ul>
+                    <li>Petani</li>
+                    <li>Pramugari</li>
+                    <li>Dokter Hewan</li>
+                </ul>
+                
+                <li><strong>Ordered List</strong></li>
+                
+                <img src="/bahan/gambar/codingan/ordered list.png" alt="Contoh kode HTML ordered list" class="ctr-img list-img">
+                
+                <p><strong>Hasil codingan</strong></p>
+                <ol>
+                    <li>Petani</li>
+                    <li>Pramugari</li>
+                    <li>Dokter Hewan</li>
+                </ol>
+            </ol>
+            
+            <p>Dalam penggunaan *ordered list*, kita bisa mengganti awalan list sesuai yang diinginkan dengan menambahkan atribute <code>type</code> lalu memilih tipe awalan list yang diinginkan:</p>
+            
+            <img src="/bahan/gambar/codingan/tipe ordered list.png" alt="Contoh kode HTML ordered list dengan atribut type" class="ctr-img list-img">
+            
+            <p><strong>Hasil codingan</strong></p>
+            <ol type="A">
+                <li>Petani</li>
+                <li>Pramugari</li>
+                <li>Dokter Hewan</li>
+            </ol>
+        </section>
+
+        <section id="link">
+            <h2 class="sub-bab">Membuat Link</h2>
+            <p>Dalam membuat web, biasanya kita akan membuat banyak sekali halaman HTML. Di sinilah fungsi dari *link* untuk berpindah dari halaman satu ke halaman lainnya. Dalam membuat *link* di HTML kita memakai tag <code>&lt;a&gt;</code> yang mana memiliki beberapa atribut:</p>
+            <ol type="A">
+                <li>Atribut <code>href</code>: Berisi lokasi tujuan dari link yang akan dituju.</li>
+                <li>Atribut <code>target</code>: Memiliki fungsi sebagai target dari jendela web browser. Jika <code>_self</code> artinya halaman akan ditampilkan pada halaman yang sama (ini adalah setelan *default*). Selanjutnya ada <code>_blank</code> yang mana halaman yang ingin kita tuju akan terbuka di jendela baru di *browser*.</li>
+                <li>Atribut <code>title</code>: Untuk menuliskan judul yang akan keluar ketika *mouse* berada di atas *link* tersebut.</li>
+            </ol>
+            
+            <img src="/bahan/gambar/codingan/link.png" alt="Contoh kode HTML tag anchor atau link" class="ctr-img">
+            
+            <p><strong>Hasil codingan</strong></p>
+            <ul>
+                <li><a href="https://www.youtube.com/@Azriz14" target="_blank">Youtube Azriz</a></li>
+                <li><a href="https://www.instagram.com/azriz_12?igsh=M2pybmp2eHp5ZnA0" target="_blank">Instagram Azriz</a></li>
+            </ul>
+        </section>
+        
+        <section id="gambar">
+            <h2 class="sub-bab">Memasukkan Gambar</h2>
+            <div>
+                <p>Tag <code>&lt;img&gt;</code> digunakan untuk memasukkan gambar atau foto ke dalam web kita untuk memperindah tampilan yang akan kita buat. Hampir semua format yang didukung oleh web browser bisa kita tampilkan.</p>
+                <p><strong>Attribute <code>&lt;img&gt;</code></strong></p>
+                <ol type="A">
+                    <li>Atribut <code>src</code>: Untuk menentukan *source* atau asal gambar, bisa menggunakan *absolute url* atau *relative url*.</li>
+                    <li>Atribut <code>alt</code>: Digunakan untuk representasi teks atau tulisan bagi gambar (penting untuk aksesibilitas).</li>
+                </ol>
+                <img src="/bahan/gambar/codingan/img.png" alt="Contoh kode HTML memasukkan gambar" class="ctr-img">
+                
+                <h3>Hasil Gambar</h3>
+                <img src="/bahan/gambar/one piece.jpeg" alt="Ilustrasi One Piece" class="ctr-img default-size">
+            </div>
+            
+            <div>
+                <h3>Image Size</h3>
+                
+                <blockquote>
+                    Secara bawaan, gambar akan mengikuti ukuran aslinya. Jika kita ingin mengubah ukurannya, kita bisa menggunakan atribut CSS <code>width</code> untuk menentukan lebar dan <code>height</code> untuk menentukan tinggi. Kita bisa memakai satuan <code>px</code> atau <code>%</code>.
+                </blockquote>
+
+                <img src="/bahan/gambar/codingan/img size.png" alt="Contoh kode HTML mengatur ukuran gambar dengan style" class="ctr-img">
+                
+                <h3>Hasil Gambar</h3>
+                <img src="/bahan/gambar/one piece.jpeg" alt="Ilustrasi One Piece ukuran 250px" class="ctr-img custom-size">
+                
+                <p>Kita bisa melihat sendiri perbedaan dari gambar pertama yang memakai ukuran *default* dari gambar, sedangkan gambar kedua adalah hasil setelah kita ubah ukurannya menggunakan *style* dengan ukuran yang kita inginkan.</p>
+            </div>
+        </section>
+
+        <section id="emoji">
+            <h2 class="sub-bab">Emoji</h2>
+            <p>HTML juga bisa menampilkan *emoji* di dalam halamannya. Untuk penggunaannya, kita harus memakai kode tertentu, mirip seperti memakai *entities*.</p>
+            
+            <img src="/bahan/gambar/emoji.png" alt="Tabel kode untuk emoji" class="ctr-img">
+            
+            <p>Jika kita ingin memakai salah satu *emoji*, kita tinggal memasukkan kode hexadimal maupun decimal dari *emoji* yang kita butuhkan.</p>
+            
+            <img src="/bahan/gambar/codingan/emoji.png" alt="Contoh kode HTML menggunakan emoji entity" class="ctr-img">
+            
+            <p>Hasilnya :</p>
+            <p class="result-emoji">(&lpar; Selamat pagi &#x1F601; &rpar;)</p>
+            <p class="result-emoji">(&lpar; Haloo &#128521; &rpar;)</p>
+        </section>
+
+        <section id="favicon">
+            <h2 class="sub-bab">Favicon</h2>
+            
+            <blockquote>
+                *Favicon* adalah ikon kecil yang muncul di sebelah judul halaman pada tab *web browser*. Ikon ini membantu pengguna mengenali *website* Anda.
+            </blockquote>
+
+            <p>Ketika kita membuka *website* seperti Google, Facebook, dan lainnya, biasanya pada bagian tab *web browser* terdapat logo dari perusahaannya.</p>
+            
+            <img src="/bahan/gambar/fav icon.png" alt="Contoh tampilan favicon pada tab browser" class="ctr-img">
+            
+            <p>Untuk membuat *favicon*, kita bisa memakai tag <code>&lt;link&gt;</code> pada bagian <code>&lt;head&gt;</code> pada HTML, di mana kita perlu menggunakan atribut <code>rel="icon"</code> dan <code>href</code> menuju lokasi gambar *icon* yang ingin dipakai. Gambar *icon* bisa berupa <code>.ico</code>, <code>.png</code>, <code>.jpg</code>, <code>.svg</code>, atau <code>.gif</code>.</p>
+            
+            <img src="/bahan/gambar/codingan/favicon.png" alt="Contoh kode HTML menambahkan favicon" class="ctr-img">
+        </section>
+
+        <section id="video">
+            <h2 class="sub-bab">Memasukkan Video</h2>
+            <p>Selain gambar, pada HTML juga bisa memunculkan video di halaman web yang kita buat. Biasanya format video yang digunakan adalah <code>.mp4</code>, <code>.webm</code> atau <code>.ogg</code>. Untuk menampilkan video, kita memakai tag <code>&lt;video&gt;</code>.</p>
+            <p>Tag <code>&lt;video&gt;</code> memiliki beberapa atribut penting:</p>
+            <ul>
+                <li><code>width</code> dan <code>height</code>: Untuk ukuran lebar dan tinggi video.</li>
+                <li><code>controls</code>: Untuk menampilkan kontrol pemutar video.</li>
+                <li><code>autoplay</code>: Untuk membuat video otomatis terputar.</li>
+                <li><code>&lt;source&gt;</code>: Berisi konten asal video yang ingin ditampilkan.</li>
+            </ul>
+            
+            <img src="/bahan/gambar/codingan/video.png" alt="Contoh kode HTML memasukkan video" class="ctr-img">
+            <div class="video-container">
+                <video controls>
+                    <source src="/bahan/video/video_001.mp4">
+                   
+                </video>
+            </div>
+        </section>
+
+        <section id="audio">
+            <h2 class="sub-bab">Audio</h2>
+            <p>HTML juga mendukung untuk memasukkan audio memakai tag <code>&lt;audio&gt;</code>. Penggunaannya mirip seperti penggunaan tag video.</p>
+            
+            <img src="/bahan/gambar/codingan/audio.png" alt="Contoh kode HTML memasukkan audio" class="ctr-img">
+            
+            <p>Hasilnya :</p>
+            <audio controls>
+                <source src="/bahan/video/audio.mp3">
+                Maaf, browser Anda tidak mendukung tag audio.
+            </audio>
+        </section>
+
+        <section id="iframe">
+            <h2 class="sub-bab">Inline-Frame</h2>
+            <p>Inline Frame digunakan jika kita ingin menambahkan halaman web lain pada halaman web kita. Untuk melakukannya, kita bisa memakai tag <code>&lt;iframe&gt;</code> pada HTML.</p>
+            
+            <blockquote>
+                Catatan Penting: Penggunaan <code>&lt;iframe&gt;</code> harus bijaksana karena dapat memengaruhi performa halaman (loading time) dan berpotensi menimbulkan risiko keamanan jika konten yang dimuat berasal dari sumber yang tidak terpercaya.
+            </blockquote>
+            
+            <img src="/bahan/gambar/codingan/iframe.png" alt="Contoh kode HTML menggunakan iframe" class="ctr-img">
+            
+            <iframe src="/index.html" frameborder="20" height="500px" width="800px" class="main-iframe" id="Frame"></iframe>
+        </section>
+
+        <section id="table">
+            <h2 class="sub-bab">Belajar Table</h2>
+            <p>Untuk membuat tabel di HTML kita bisa memakai tag <code>&lt;table&gt;</code>. Dalam setelan *default*, tabel tidak memiliki *border*, maka harus kita tambahkan dengan *style* CSS.</p>
+            <p>Ada beberapa tag yang terdapat pada tabel:</p>
+            <ul>
+                <li><code>&lt;thead&gt;</code> untuk membuat *header* pada tabel.</li>
+                <li><code>&lt;tbody&gt;</code> untuk mengelompokkan isi pada tabel.</li>
+                <li><code>&lt;tfoot&gt;</code> untuk membuat *footer* pada tabel.</li>
+                <li><code>&lt;th&gt;</code> untuk membuat kolom *header*.</li>
+                <li><code>&lt;tr&gt;</code> untuk membuat baris pada tabel.</li>
+                <li><code>&lt;td&gt;</code> untuk membuat kolom data pada tabel.</li>
+            </ul>
+            
+            <img src="/bahan/gambar/codingan/table.png" alt="Contoh dasar kode HTML membuat tabel" class="ctr-img">
+            
+            <h3>Colgroup</h3>
+            <p>Kolom grup dilakukan untuk membuat grup dari beberapa kolom, biasanya digunakan untuk memberi *style* pada kolom yang kita inginkan saja. Kita bisa memakai tag <code>&lt;colgroup&gt;</code> untuk membuat grup kolom dan tag <code>&lt;col&gt;</code> untuk tiap kolom. Untuk lebih dari satu kolom, kita bisa memakai atribut <code>span</code> disertai dengan nilai angka (contoh: <code>span="2"</code> berarti kolom 1 dan 2).</p>
+            <p>Contoh Hasil :</p>
+            
+            <table class="styled-table">
+                <colgroup>
+                    <col span="2" style="background-color: blue;"> 
+                    <col style="background-color: aqua;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>No Handphone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anji</td>
+                        <td>Palembang</td>
+                        <td>0211111</td>
+                    </tr>
+                    <tr>
+                        <td>Nisa</td>
+                        <td>Lubuk Linggau</td>
+                        <td>0212222</td>
+                    </tr>
+                    <tr>
+                        <td>Jodi</td>
+                        <td>Way Kanan</td>
+                        <td>0213333</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>Pada contoh di atas, saya memakai nilai <code>span="2"</code> pada <code>colgroup</code>, maka kolom 1 dan 2 akan memakai *style* yang sama (warna biru) tanpa perlu memberi *style* satu per satu pada <code>&lt;td&gt;</code>.</p>
+            
+            <h3>Colspan dan Rowspan</h3>
+            
+            <blockquote>
+                Kedua tag ini digunakan untuk menggabungkan beberapa kolom maupun baris (*merge*). Tag <code>colspan</code> untuk menggabungkan beberapa kolom, sedangkan tag <code>rowspan</code> digunakan untuk menggabungkan beberapa baris tabel menjadi satu.
+            </blockquote>
+
+            <img src="/bahan/gambar/codingan/table-colgrop.png" alt="Contoh kode HTML menggunakan atribut colspan" class="ctr-img">
+            
+            <p>Seperti yang terlihat, saya menggabungkan kolom *header* tabel memakai tag <code>colspan</code> sehingga pada *header* yang awalnya ada dua menjadi satu kesatuan:</p>
+            <table class="styled-table">
+                <colgroup>
+                    <col span="2" style="background-color: #64b5f6;">
+                    <col span="2" style="background-color: #a5d6a7;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="2">Nama Lengkap</th>
+                        <th>Kota</th>
+                        <th>Telepon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anji</td>
+                        <th>Riguna</th>
+                        <td>Palembang</td>
+                        <td>0211111</td>
+                    </tr>
+                    <tr>
+                        <td>Nisa</td>
+                        <th>Sofyan</th>
+                        <td>Lubuk Linggau</td>
+                        <td>0212222</td>
+                    </tr>
+                    <tr>
+                        <td>Jodi</td>
+                        <th>Mahendra</th>
+                        <td>Way Kanan</td>
+                        <td>0213333</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </div>
 </div>
-
-    </main>
-
-
+</main>
+   
 
 
 
+
+<!-- footer===================================== -->
      <footer>
         <p><strong>Powered by AZRIZ <time datetime="2025">2025</strong></time></p>
     
