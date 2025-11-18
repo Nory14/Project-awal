@@ -4,7 +4,6 @@ body {
     background-color: brown;
     margin: 0;
     padding: 0;
-    height: 2500px;
     line-height: 1.6;
 }
 
@@ -65,7 +64,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(7, 170, 196);
     font-size: 20px;
     transition: 0.3s;
 }
@@ -79,7 +78,7 @@ ul li:hover {
 }
 
 ul li:hover a {
-    color: black;
+    color: red;
     transition: 0.5s;
 }
 
@@ -101,13 +100,56 @@ a:hover button {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
     cursor: pointer;
     transition: 0.5s;
+    
 }
 
+button:hover{
+    color: red;
+    border: solid black;
+    background-color: rgb(7, 170, 196);
+}
 a:active button {
     box-shadow: none;
     transform: translateY(2px);
+    
 }
 
-main {
+
+main{
     max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: red ; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
 }
+
+
+.isi{
+   
+    text-align: justify;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    padding: 0;
+}
+
+footer{
+    text-align: center;
+    background-color:rgb(145, 11, 11) ;
+    font-size: 20px;
+    border: solid 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
